@@ -1,0 +1,7 @@
+{
+  "version": "0.2",
+  "language": "en-GB",
+  "files": ["**/*.md"],
+  "ignorePaths": ["node_modules", ".git", "LICENSE"],
+  "words": ["markdownlint", "cspell", "yjfvictor", "lint-staged", "lintstaged", "Linters"]
+}
