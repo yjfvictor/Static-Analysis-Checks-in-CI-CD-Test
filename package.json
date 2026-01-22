@@ -1,0 +1,23 @@
+{
+  "name": "static-analysis-checks-in-ci-cd-test",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Test repo for static analysis checks in CI/CD",
+  "scripts": {
+    "lint:md": "markdownlint-cli2 \"**/*.md\" \"#**/node_modules/**\"",
+    "lint:spell": "cspell \"**/*.md\"",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "cspell": "^8.0.0",
+    "husky": "^9.0.0",
+    "lint-staged": "^15.0.0",
+    "markdownlint-cli2": "^0.15.0"
+  },
+  "lint-staged": {
+    "*.md": [
+      "markdownlint-cli2",
+      "cspell"
+    ]
+  }
+}
